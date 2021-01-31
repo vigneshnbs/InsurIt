@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sign up
+        </title>
+    </head>
+    <body>
+        <div class="form-container">
+            
+            <form method="POST" action="customer/signup.php">
+                <label>e-mail</label>
+                <input name="e-mail" type="email" required>
+                <br><br>
+                <label>password</label>
+                <input name="password" type="password" required>
+                <br><br>
+                <label>name</label>
+                <input name="name" type="text">
+                <br><br>
+                <label>date of birth</label>
+                <input name="dob" type="date">
+                <br><br>
+                <input name="type" type="hidden" value="customer">
+
+                <input type="submit">
+            
+            </form>
+            
+            <form method="POST" action="user/signup.php">
+
+                <label>e-mail</label>
+                <input name="e-mail" type="email" required>
+                <br><br>
+                <label>password</label>
+                <input name="password" type="password" required>
+                <br><br>
+                <label>name</label>
+                <input name="name" type="text">
+                <br><br>
+                <label>date of birth</label>
+                <input name="dob" type="date">
+                <br><br>
+                <input name="type" type="hidden" value="user">
+                <br><br>
+                <label>usertype</label>
+                <input type="number" name="usertype">
+                <br><br>
+                <input type="submit">
+            
+            </form>
+        </div>
+    </body>
+</html>
